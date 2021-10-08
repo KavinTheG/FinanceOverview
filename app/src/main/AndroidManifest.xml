@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinanceOverview">
         <activity
+            android:name=".GeneralOverview"
+            android:exported="true" />
+        <activity
             android:name=".Expenses"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Revenue"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -16,7 +16,7 @@
             android:name=".Expenses"
             android:exported="true" />
         <activity
-            android:name=".Revenue"
+            android:name=".Income"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

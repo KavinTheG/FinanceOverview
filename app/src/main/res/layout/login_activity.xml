@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/create_account_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
@@ -49,10 +49,12 @@
         app:layout_constraintVertical_bias="0.036" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="351dp"
-        android:layout_height="60dp"
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_marginTop="72dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:textColor="#8C67F6"
         android:background="@drawable/et_style"
         android:ems="10"
@@ -63,14 +65,16 @@
         android:textColorHint="#6837F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/create_account_text" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="351dp"
-        android:layout_height="60dp"
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_marginTop="36dp"
         android:textColor="#8C67F6"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
         android:background="@drawable/et_style"
         android:ems="10"
         android:fontFamily="sans-serif-light"
@@ -81,11 +85,11 @@
         app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/login_email"
         app:layout_constraintVertical_bias="0.275" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/create_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -95,7 +99,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.146"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

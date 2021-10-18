@@ -1,6 +1,7 @@
 package com.example.financeoverview;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -9,13 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
-    Context ct;
+    Context context;
     String s1[];
     String s2[];
 
     public RecyclerViewAdapter(Context ct, String s1[], String s2[]) {
 
-        this.ct = ct;
+        context = ct;
         this.s1 = s1;
         this.s2 = s2;
 
@@ -24,7 +25,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.my_row, parent, false);
+        return new MyViewHolder(view);
+
     }
 
     @Override

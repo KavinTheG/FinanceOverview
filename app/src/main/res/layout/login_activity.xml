@@ -12,12 +12,12 @@
         android:id="@+id/loginBtn"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginTop="56dp"
         android:text="Log In"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <TextView
         android:id="@+id/textView3"
@@ -43,8 +43,8 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.036" />
 
@@ -52,16 +52,16 @@
         android:id="@+id/login_email"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="72dp"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:textColor="#8C67F6"
         android:background="@drawable/et_style"
         android:ems="10"
         android:fontFamily="sans-serif-light"
-        android:paddingLeft="15dp"
         android:hint="e-mail"
         android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="#8C67F6"
         android:textColorHint="#6837F3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,22 +71,20 @@
         android:id="@+id/login_password"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="36dp"
-        android:textColor="#8C67F6"
-        android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/et_style"
         android:ems="10"
         android:fontFamily="sans-serif-light"
-        android:paddingLeft="15dp"
         android:hint="password"
         android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textColor="#8C67F6"
         android:textColorHint="#6837F3"
-        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_email"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintTop_toBottomOf="@+id/login_email" />
 
     <TextView
         android:id="@+id/create_account"
@@ -99,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn"
-        app:layout_constraintVertical_bias="0.146"
+        app:layout_constraintVertical_bias="0.117"
         tools:ignore="TouchTargetSizeCheck" />
 
 

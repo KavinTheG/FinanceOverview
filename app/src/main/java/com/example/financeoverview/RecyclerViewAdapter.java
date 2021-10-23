@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,18 +34,26 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+        holder.title.setText(s1[position]);
+        holder.descrip.setText(s1[position]);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return s1.length;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
+        // Constructor receives itemView from onCreateViewHolder (line 27)
+        // Must retrieve id of the items in m_row
+
+        TextView title, descrip;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            title = itemView.findViewById(R.id.item_title);
+            descrip = itemView.findViewById(R.id.item_descrip);
+
         }
     }
 }

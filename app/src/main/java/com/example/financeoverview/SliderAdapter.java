@@ -14,13 +14,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.formatter.ValueFormatter;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -117,8 +114,8 @@ public class SliderAdapter extends PagerAdapter {
         sendToNewPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent incomePage = new Intent(view.getContext().getApplicationContext(), Income.class);
-                Intent expensePage = new Intent(view.getContext().getApplicationContext(), Expenses.class);
+                Intent incomePage = new Intent(view.getContext().getApplicationContext(), IncomePage.class);
+                Intent expensePage = new Intent(view.getContext().getApplicationContext(), ExpensesPage.class);
 
                 if (position == 0) {
                     view.getContext().startActivity(incomePage);

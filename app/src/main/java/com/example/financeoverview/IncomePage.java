@@ -6,14 +6,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 
-public class Income extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class IncomePage extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,7 @@ public class Income extends AppCompatActivity implements AdapterView.OnItemSelec
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.income_type, android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(Income.this);
+        spinner.setOnItemSelectedListener(IncomePage.this);
 
         RecyclerView recyclerView = findViewById(R.id.recyclyerViewExpense);
 

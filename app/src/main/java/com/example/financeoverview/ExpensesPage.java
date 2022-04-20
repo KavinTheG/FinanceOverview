@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 
 
-public class Expenses extends AppCompatActivity {
+public class ExpensesPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

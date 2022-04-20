@@ -16,10 +16,10 @@
             android:name=".GeneralOverview"
             android:exported="true" />
         <activity
-            android:name=".Expenses"
+            android:name=".ExpensesPage"
             android:exported="true" />
         <activity
-            android:name=".Income"
+            android:name=".IncomePage"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
